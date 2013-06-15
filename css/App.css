@@ -1,0 +1,96 @@
+.dragg:hover{
+	cursor: move;
+}
+.dragg {
+	z-index: 9999;
+}
+.sidetab {
+	padding-left: 10px;
+	color:#000;
+	position: relative;
+}
+#design{
+
+position:relative;
+background:#f8f8f8;
+overflow: auto;
+}
+.foreground{
+}
+#properties{
+	display: block;
+	position: absolute;
+	width: 300px;
+	height: 200px;
+	background: white;
+	z-index: 999999;
+	top:30%;
+	left:80%;
+	box-shadow:0 1px 3px rgba(0,0,0,.4);
+	border:1px solid #ccc;
+  	border-radius:3px;
+  	overflow: hidden;
+}
+#properties .row{
+	margin-left:0px;
+	padding-left: 10px;
+}
+#properties .form-horizontal{
+	margin-top: 20px;
+
+}
+#properties .form-horizontal .control-label {
+	float: left;
+	width: 60px;
+	padding-top: 5px;
+	text-align: right;
+}
+#properties .form-horizontal .controls {
+	margin-left: 80px;
+}
+#properties .prop_title{
+  margin:0 0;
+  padding:0 0;
+  font-size: 14px;
+  font-weight: 200;
+  padding: 10px 0px 0px 15px;
+  color:#fff;
+  height: 30px;
+  text-shadow:0 1px 0 rgba(0,0,0,.4);
+  background-color: #1b1b1b;
+  background-image: -moz-linear-gradient(top, #222222, #111111);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#222222), to(#111111));
+  background-image: -webkit-linear-gradient(top, #222222, #111111);
+  background-image: -o-linear-gradient(top, #222222, #111111);
+  background-image: linear-gradient(to bottom, #222222, #111111);
+  background-repeat: repeat-x;
+  border-color: #252525;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff222222', endColorstr='#ff111111', GradientType=0);
+  position:relative;
+}
+.scroller {
+	overflow: scroll;
+	width:auto;
+	height: 400px;
+}
+
+.scroller::-webkit-scrollbar {
+	width: 5px;
+	height: 5px;
+}
+.scroller::-webkit-scrollbar-track {
+	background-color: rgba(113,112,107,0.1);
+	-webkit-border-radius: 5px;
+}
+.scroller::-webkit-scrollbar-thumb:vertical {
+	background-color: rgba(0,0,0,.2);
+	-webkit-border-radius: 6px;
+}
+.scroller::-webkit-scrollbar-thumb:vertical:hover,
+.scroller::-webkit-scrollbar-thumb:horizontal:hover {
+	background: red;
+}
+.scroller::-webkit-scrollbar-thumb:horizontal {
+	background-color: rgba(0,0,0,.2);
+	-webkit-border-radius: 6px;
+}

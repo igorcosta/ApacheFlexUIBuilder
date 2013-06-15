@@ -1,0 +1,166 @@
+<!doctype html>
+<html>
+<head>
+
+<link rel="shortcut icon" href="favicon.ico">
+<meta http-equiv="X-UA-Compatible" content="IE=9; IE=8;" />
+<meta charset="utf-8">
+<title>Apache Flex UI Builder v1.0</title>
+
+</head>
+
+<body>
+<div id="aboutModal" style="width:800px;z-index:999999999" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+    <h3 id="myModalLabel">About Apache Flex UI Builder</h3>
+  </div>
+  <div class="modal-body scroller">
+  	<p><a href="http://www.igorcosta.com">Created by Igor Costa</a></p>
+    <p>Apache Flex UI Builder helps developers to create smooth UI without writing mxml in very basic approach</p>
+    <p>Since Adobe removed the Design Mode in Flash Builder, I used some html,js techninques to write a Visual mode</p>
+    <p>Keep in mind that this is just the begining, you can collaborate, fork, share and send pull requests</p>
+    <a href="http://github.com/igorcosta" target="_blank">Share and Fork</a>
+    <p></p>
+    <h4>Special Thanks to:</h4>
+    <ul style="unstyled">
+      <li>Janderson Cardoso, Erko Bridee, Hadi and special readers of my Portuguese blog.</li>
+      <li>Code Mirror</li>
+      <li>JQuery/JQuery UI</li>
+      <li>JQuery TreeView /Free Transform</li>
+      <li>UnderscoreJS</li>
+      <li>Twitter Bootstrap</li>
+      <li>Bootstrap Switch</li>
+      <li>Fuel UX Components</li>
+      <li>Apache Flex peers</li>
+    </ul>
+    <div>
+    	<h2>License</h2>
+    		
+    	<p>Copyright 2013 Igor Costa</p>
+
+   <p>Licensed under the Apache License, Version 2.0 (the "License");</p>
+   <p>you may not use this file except in compliance with the License.</p>
+   <p>You may obtain a copy of the License at</p>
+
+     <p>  http://www.apache.org/licenses/LICENSE-2.0</p>
+
+  <p> Unless required by applicable law or agreed to in writing, software</p>
+  <p> distributed under the License is distributed on an "AS IS" BASIS,</p>
+  <p> WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.</p>
+  <p>See the License for the specific language governing permissions and</p>
+   <p>limitations under the License.</p>
+    </div>
+    <div>
+    	 <h2> Trade Marks</h2>
+    	  <p>Icons for components are same as used in Flash Builder, Flash Builder is a Adobe product</p>
+    </div>
+  </div>
+  <div class="modal-footer">
+    <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+  </div>
+</div>
+
+<!-- 	<div id="arraste-me" class="ui-widget-content span4">
+  <p>Drag me around</p>2A2C31;3E4147
+</div>
+ -->
+ <div class="navbar navbar-inverse navbar-fixed-top" >
+ 	<div class="navbar-inner">
+ 		<div class="container" style="width: auto;" >
+ 			<a class="brand" href="#" style="margin-left:20px;"> Apache Flex UI Builder</a>
+ 			<div class="nav-collapse">
+ 				<ul class="nav" id="switchViews">
+ 					<li ><a  href="#source" data-toggle="tab">Source</a></li>
+ 					<li class="active"><a href="#design" data-toggle="tab">Design Mode</a></li>
+
+ 				</ul>
+ 			</div><!-- /.nav-collapse -->
+ 			<div class="pull-right">
+ 				<ul class="nav">
+ 					<li><a href="#aboutModal" data-toggle="modal">About</a></li>
+ 				</ul>
+ 				<ul class="nav pull-right">
+ 						<li class="dropdown open">
+ 							<a data-toggle="dropdown" class="dropdown-toggle"><i class="large icon-white icon-cog"></i>
+ 								<b class="caret"></b></a>
+ 						<ul class="dropdown-menu" style="width:240px;padding-left:10px;">
+ 							<li class="nav-header">Options:</li>
+ 							<li>
+ 								<div class="switch" id="comps" data-on="primary">
+								    <input type="checkbox" checked />
+								</div>
+								<small>Comps Panel</small>
+								<p></p>
+ 							</li>
+ 							<li>
+ 								<div class="switch" id="props" data-on="primary">
+								    <input type="checkbox" checked />
+								</div>
+								<small>Properties Panel</small>
+								<p></p>
+ 							</li>
+ 						</ul>
+ 					</li>
+ 				</ul>
+ 			</div>
+
+ 		</div>
+ 	</div><!-- /navbar-inner -->
+ </div>
+	   <div class="row-fluid" style="margin-top:50px;">
+	   			<div id="components" class="sidetab span2">
+	   				<h4><a href="?#">Components</a></h4>	
+	   			</div>
+
+	   			<div id="designer" class="span10">
+	   				<div class="tab-content">
+					  <div class="tab-pane" id="source">
+					  		 <form><textarea id="source_code" name="source_code"></textarea></form>
+					  </div>
+					  <div class="tab-pane active" id="design">
+					  </div>
+					</div>
+	   			</div>
+
+	   </div>
+
+
+
+<link rel="stylesheet" href="css/libs/normalize.css"/>
+<link href="css/libs/bootstrap.css" rel="stylesheet">
+<link href="css/libs/jquery.treeview.css" rel="stylesheet">
+<link href="css/libs/jquery.freetrans.css" rel="stylesheet">
+<link href="css/libs/fuelux.css" rel="stylesheet">
+<link href="css/libs/bootstrapSwitch.css" rel="stylesheet">
+<link href="css/libs/codemirror.css" rel="stylesheet">
+<link rel="stylesheet" href="css/App.css"/>
+<link rel="stylesheet" href="css/providers/flex.css"/>
+
+
+<script src="js/libs/jquery.js"></script>
+<script src="js/libs/jquery-ui.js"></script>
+<script src="js/libs/jquery.treeview.js"></script>
+<script src="js/libs/Matrix.js"></script>
+<script src="js/libs/jquery.freetrans.js"></script>
+<script src="js/libs/underscore-min.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/libs/bootstrap.min.js"></script>
+<script src="js/libs/fuelux.js"></script>
+<script src="js/libs/bootstrapSwitch.js"></script>
+<script src="js/libs/codemirror.js"></script>
+
+<!-- Code mirror -->
+<script src="js/libs/addon/hint/show-hint.js"></script>
+<link rel="stylesheet" href="js/libs/addon/hint/show-hint.css">
+<link rel="stylesheet" href="js/libs/theme/eclipse.css">
+<script src="js/libs/addon/edit/closetag.js"></script>
+<script src="js/libs/addon/hint/mxml-hint.js"></script>
+<script src="js/libs/mode/xml/xml.js"></script>
+<script src="js/libs/mode/javascript/javascript.js"></script>
+<script src="js/libs/mode/css/css.js"></script>
+<script src="js/libs/mode/htmlmixed/htmlmixed.js"></script>
+
+<script src="js/App.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/providers/flex-ui.js" type="text/javascript" charset="utf-8"></script>
+</body>
+</html>
