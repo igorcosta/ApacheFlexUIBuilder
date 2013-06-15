@@ -2,27 +2,27 @@
 
 #### Creating Flex UI with drag and drop, easy like in Flash Builder
 
-![alt text](https://github.com/igorcosta/ApacheFlexUIBuilder/temp/frist-shot.png "Screenshot")
+![alt text](https://github.com/igorcosta/ApacheFlexUIBuilder/tree/master/temp/frist-shot.png "Screenshot")
 
 
- Apache Flex UI Builder helps you to drag and drop components and also with the power of CodeMirror you
- can write your MXML directly in the browser, with auto complete with limited available
- Inspect properties, scale, change on the fly and generates mxml on every movement.
+Apache Flex UI Builder helps you to drag and drop components and also with the power of CodeMirror you
+can write your MXML directly in the browser, with auto complete with limited available
+Inspect properties, scale, change on the fly and generates mxml on every movement.
 
- After generating mxml, you can copy and paste directly on your IDE and be more productive.
+After generating mxml, you can copy and paste directly on your IDE and be more productive.
 
- Since Flash Builder 4.7 doesn't support Design Mode, this project could help fullfill the gap left
- to Flex developers out there.
+Since Flash Builder 4.7 doesn't support Design Mode, this project could help fullfill the gap left
+to Flex developers out there.
 
 ---
 # About Apache Flex
 
- Apache Flex is a open-source UI SDK that creates compeling and beautiful interfaces for Flash Player platform.
- Using state of art technology and used by Fortune's TOP 500 companies, Flex is the ultimate goal UI technology 
- knwon today, creating not only UI but you can produce native Apps, Desktop Apps and Web Apps coding with MXML and 
- actionscript.
+Apache Flex is a open-source UI SDK that creates compeling and beautiful interfaces for Flash Player platform.
+Using state of art technology and used by Fortune's TOP 500 companies, Flex is the ultimate goal UI technology 
+knwon today, creating not only UI but you can produce native Apps, Desktop Apps and Web Apps coding with MXML and 
+actionscript.
 
- To know more about the project visit our [official website](http://flex.apache.org)
+To know more about the project visit our [official website](http://flex.apache.org)
 ---
 Components that are capable of drag and drop in current release
 
@@ -60,10 +60,10 @@ Components that are capable of drag and drop in current release
 
 ## known issues
 
-. Draging a component into design area causes a position to 0x0 for first time
-. Scaling using drag controlers and selecting a component causes component to flick and jump.
-. Childs drags doesn't work on first release.
-. Reflection from source code to Design doesn't work, just design-> code generation.
+.Draging a component into design area causes a position to 0x0 for first time
+.Scaling using drag controlers and selecting a component causes component to flick and jump.
+.Childs drags doesn't work on first release.
+.Reflection from source code to Design doesn't work, just design-> code generation.
 
 
 ## I want to Help!
