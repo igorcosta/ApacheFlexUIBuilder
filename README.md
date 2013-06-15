@@ -2,7 +2,7 @@
 
 #### Creating Flex UI with drag and drop, easy like in Flash Builder
 
-![alt text](https://github.com/igorcosta/ApacheFlexUIBuilder/tree/master/temp/frist-shot.png "Screenshot")
+![alt text](https://github.com/igorcosta/ApacheFlexUIBuilder/tree/master/temp/first-shot.png "Screenshot")
 
 
 Apache Flex UI Builder helps you to drag and drop components and also with the power of CodeMirror you
